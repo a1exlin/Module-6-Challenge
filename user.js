@@ -88,9 +88,7 @@ function getweather(city) {
                     // sets the weather info into localstorage in Google dev tools. weatherarray = weather
                     localStorage.setItem("weather" , JSON.stringify(weatherarray))
 
-                    // let searching = browser.history.search(
-                    //     query                  // object
-                    //   )
+                 
                 })
         })
 }
@@ -107,3 +105,7 @@ function refreshPage() {
 //     event.preventDefault();
 //     initMap();}
 // })
+
+   // let searching = browser.history.search(
+                    //     query                  // object
+                    //   )
