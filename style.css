@@ -1,4 +1,23 @@
-.input-group {
-   width: -50px;
-   height: 20px;
+/* ID = # class = . */
+.weatherbox {
+   background-image: url("https://c4.wallpaperflare.com/wallpaper/842/18/565/anime-sky-cloud-clouds-wallpaper-preview.jpg");
+   background-size: cover;
+   border-bottom: 3px solid black;
+   height: 200px;
+   color: black;
+
 }
+
+.refresh-button {
+	border-radius: 5px;
+	padding: 5px;
+    margin-right: -60px;
+    background-color: lightskyblue;
+    text-decoration: wavy;
+    display: flexbox;
+ } 
+
+ #Search-history {
+border: 10px;
+height: 200px;
+ }

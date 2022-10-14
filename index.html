@@ -1,38 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-
-
-<head>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css >
+  <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css>
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Channel </title>
 </head>
 
-<title>Weather Channel </title>
+
 
 
 <body>
-    <div class="p-3 mb-2 bg-primary text-white text-center fs-1">Weather Board</div>
+  <div class="p-3 mb-2 bg-primary text-white text-center fs-1">Weather Board</div>
+
   <form id="searchForm" method="post">
     <header> Search for a city </header>
-    
+
     <!-- search bar -->
     <div class="input-group">
-      <input type="search" class="form-control" placeholder="Enter an address here to find things to do near you!"
-        aria-describedby="basic-addon2" id="showMap">
-        
-        <div class="input-group-append">
-        <!-- search button -->
-        <button class="btn btn-outline-secondary" type="button" id="searchButton">🔍</button>
-        </div>
-    
+      <input type="search" class="form-control" placeholder="Enter a city to find its weather!"
+        aria-describedby="basic-addon2" id="showweather">
+    </div>
+
+    <div class="input-group-append">
+      <!-- search button -->
+      <button class="btn btn-outline-secondary" type="button" id="searchButton">🔍</button>
+
+      <button class = "refresh-button" type="submit" onClick="refreshPage()">Refresh Search</button>
+
+    </div>
+
   </form>
- 
+
 
 
   <!-- create and apply a custom class name "custom-navbar" -->
@@ -41,25 +44,32 @@
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-   
-      <div id="Weather Dashboard ">
 
-        <h1> The Forecast this Week</h1>
 
-      </div>
+    <div id="Weather Dashboard ">
+<!-- create an apply a custom class name "custom-jumbotron" -->
+<section class="jumbotron jumbotron-fluid custom-jumbotron">
+  <div class="container">
+    <h1> Welcome to the 5-Day Weather Forcast </h1>
+  </div>
+</section>
+      
+
+    </div>
 
   </nav>
+  
 
-  <!-- create an apply a custom class name "custom-jumbotron" -->
-  <section class="jumbotron jumbotron-fluid custom-jumbotron">
-    <div class="container">
-      <h1>
-        5-Day Weather Forcast
-      </h1>
-    </div>
-  </section>
+<!-- Current Weather Day -->
+<div id = "current-weather">
+</div>
+ 
+  
+  <div id="search-history">
+  </div>
 
- <!-- Optional JavaScript -->
+
+  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -70,7 +80,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="user.js"></script>
+  <script src="user.js"></script>
 </body>
+
+
 
 </html>
