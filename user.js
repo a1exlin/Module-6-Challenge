@@ -14,7 +14,7 @@ searchButtonClick.addEventListener("click", function () {
 function getweather(city) {
     var geocodeurl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006'
     // A promise, awaits a response from the API
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006')
+    fetch(geocodeurl)
         .then(function (response) {
             // also a promise
             return response.json();
