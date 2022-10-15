@@ -1,4 +1,10 @@
 /* ID = # class = . */
+
+.background-image {
+   height: auto;
+   width: 500px;
+   border-bottom: 3px solid black;
+}
 .weatherbox {
    background-image: url("https://c4.wallpaperflare.com/wallpaper/842/18/565/anime-sky-cloud-clouds-wallpaper-preview.jpg");
    background-size: cover;
@@ -7,6 +13,8 @@
    color: black;
 
 }
+
+
 
 .refresh-button {
 	border-radius: 5px;
