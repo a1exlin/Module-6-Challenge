@@ -14,7 +14,7 @@ searchButtonClick.addEventListener("click", function () {
 function getweather(city) {
     var geocodeurl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006'
     // A promise, awaits a response from the API
-    fetch(geocodeurl)
+    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006')
         .then(function (response) {
             // also a promise
             return response.json();
@@ -88,11 +88,14 @@ function getweather(city) {
                     // sets the weather info into localstorage in Google dev tools. weatherarray = weather
                     localStorage.setItem("weather" , JSON.stringify(weatherarray))
 
-                 
+                
                 })
         })
 }
 
+ //     let searching = browser.history.search(
+//     query                  // object
+//     )
 // button function for refreshing the page
 function refreshPage() {
     window.location.reload();
@@ -105,7 +108,3 @@ function refreshPage() {
 //     event.preventDefault();
 //     initMap();}
 // })
-
-   // let searching = browser.history.search(
-                    //     query                  // object
-                    //   )
