@@ -12,7 +12,7 @@ searchButtonClick.addEventListener("click", function () {
 });
 // function for getting city weather data
 function getweather(city) {
-    var geocodeurl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006'
+    var geocodeurl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=ce9d98967d8af2e02237f6859bd30006'
     // A promise, awaits a response from the API
     fetch(geocodeurl)
         .then(function (response) {
@@ -23,7 +23,7 @@ function getweather(city) {
 
         .then(function (data) {
             console.log(data);
-            var weatherurl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + data[0].lat + '&lon=' + data[0].lon + '&appid=ce9d98967d8af2e02237f6859bd30006'
+            var weatherurl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + data[0].lat + '&lon=' + data[0].lon + '&appid=ce9d98967d8af2e02237f6859bd30006'
             fetch(weatherurl)
                 .then(function (response) {
 
